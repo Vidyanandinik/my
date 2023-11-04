@@ -1,0 +1,439 @@
+*{
+               padding:0;
+               margin:0;
+               text-decoration:none;
+               list-style:none;
+            
+               box-sizing: border-box;}
+body {
+               font-family: Verdana, sans-serif;
+               height:auto;
+}
+.mySlides {
+               display: none;
+               position: absolute;
+}
+img {
+               vertical-align: middle;
+}
+.background-fix{
+               width:100%;
+               height:auto;
+}
+body{
+               font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+               background:#ffff;
+               height:80px;
+               width:100%;
+}
+label{
+               color:white;
+               font-size:35px;
+               line-height:80px;
+               padding:0 100px;
+               font-weight:bold;
+
+}
+.logo{
+               height:200px;
+               width:200px;
+}
+
+nav ul{
+               float:right;
+               margin-right:20px;
+}
+nav ul li{
+               display: inline-block;
+               line-height:80px;
+               margin:0 5px;
+}
+nav ul li a{
+               color:gray;
+               font-size:17px;
+               padding:7px 13px;
+               border-radius: 3px;
+               text-transform: uppercase;
+               
+}
+a.active,a:hover{
+               color: green;
+               transition:.5s;
+               font-weight: bold;
+
+}
+.checkbtn{
+               font-size:30px;
+               color:white;
+               float:right;
+               line-height:80px;
+               margin-right:40px;
+               cursor:pointer;
+               display: none;
+
+}
+
+#check{
+               display:none;
+}
+@media (max-width: 952px){
+               label.logo{
+               font-size:30px;
+               padding-left:50px
+               }
+               nav ul li a{
+                              font-size:16px;
+               }
+}
+@media (max-width: 858px)
+ {               .checkbtn{
+                              display: block;
+               }
+               ul{
+                              position:fixed;
+                              width:100%;
+                              height:100vh;
+                              background:#2c3e50;
+                              top:80px;
+                              left:-100%;
+                              text-align:center;
+               }
+               nav ul li{
+                              display:block;
+                              margin:50px 0;
+                              line-height:30px;
+               }
+               nav ul li a{
+                              font-size:20px;
+               }
+               a:hover,a.active{
+                              background:none;
+                              color:#0082e6
+               }
+               #check:checked ~ ul{
+                              left:0;
+
+               }
+               #movable-image {
+                              width: 200px; /* Adjust the width of the image as needed */
+                              height: 200px;; /* Maintain the aspect ratio */
+                              cursor: pointer;
+                              margin-left:2px;
+                              transition:0.2s;
+                              float:left;
+                              marquee{ width: 100%;
+                               } 
+                              }
+.fade-in-image { animation: fadeIn 5s; }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+}
+
+/*-------------------About Us Using CSS------*/
+/* Reset some default styles */
+body, html {
+               margin: 0;
+               padding: 0;
+           }
+           
+           /* Create a container to hold the image and text */
+           .container {
+               position: relative;
+               width: 100%;
+               height: 50vh;
+               overflow: hidden;
+           }
+           
+           /* Style the image to take up half of the screen */
+           .image {
+               width: 100%;
+               height: 50vh;
+               position: relative;
+           }
+           
+           .image img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover; /* Maintain aspect ratio while covering the container */
+           }
+           
+           /* Style the text on top of the image */
+           .text {
+               position: absolute;
+               bottom: 10px; /* Adjust the bottom value as needed */
+               left: 50%;
+               transform: translateX(-50%);
+               background-color:none;/* Background color for text */
+               color:whitesmoke; /* Text color */
+               text-align: center;
+               font-size: 50px;
+               font-weight:bolder;
+           }
+/*-----------------------Why GRO Farms---------------------*/
+.container1{
+               margin:100px auto;
+               width:75%;
+               padding-top:0px;
+               height:100%;
+}
+.img1{
+               max-width: 650px;
+               float:left;
+
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+/*
+.floating-1 {  
+               animation-name: floating-1;
+               animation-duration: 5s;
+               animation-iteration-count: infinite;
+               animation-timing-function: ease-in-out;
+               margin-left: 50px;
+               padding-top: 0px;*/
+}
+.flower{
+             width:200px;
+             height:200px;
+             padding-bottom:600px;
+             margin-left:20px;
+             background-color:red;
+             color:yellow;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+/*--.img1:hover {
+  animation: shake 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}--*/
+/*--------------------------Columns with Logos-------------------*/
+.parent{
+               float:right;
+               margin-right:800px;
+
+}
+.logo{
+               width:80px;
+               height:80px;
+               border-radius:50%;
+
+              
+
+}
+.image-container {
+               display: flex; /* Use flexbox for positioning */
+           }
+           .Image1{
+               max-width: 20%; /* Adjust the width as needed */
+               height: 15%; /* Maintain aspect ratio */
+               border: 3px solid green;
+               border-radius: 50%;
+           }   
+           .Image1:hover{
+               max-width:21%; /* Adjust the width as needed */
+               height: 16%; /* Maintain aspect ratio */
+               border: 3px solid rgb(210, 172, 2);
+               border-radius: 50%;
+           }   
+           .text-container {
+               padding: 20px; /* Adjust the padding as needed */
+               font-family: 'Times New Roman', Times, serif;
+
+           }
+           /*---------------------------Two Boxes With Centered Image-------------------*/
+.container10-fluid{
+width:100%;
+padding-top:0px;
+}
+                                             
+.boxes-3 {
+width:737px;
+display:inline-block;
+height:auto;
+padding:0px;
+border: 1px solid #ccc;
+text-align: center;
+margin:0px;
+display: inline-block;
+vertical-align: top;
+}
+                                             
+.box img {
+  max-width: 100%;
+  max-height: 70%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+                                                           
+ }
+                                             
+.box .para {
+text-align: center;
+margin:20px 20px;
+font-size:20px;
+font-family:sans-serif;
+}
+.box-3-color{
+margin:20px 20px;
+}
+ /* Multicolor green boz*/
+                        .multi-color-box2{
+                                              width: 1500px; /* Set the width of the container */
+                                              height: 380px; /* Set the height of the container */
+                                              padding:0px;
+                                              margin-left:0px; /* Add padding for spacing inside the container */
+                                              border: 1px solid #000; /* Add a border if desired */
+                                              background: linear-gradient(to right, #039a03, #04711e,#025916); /* Use linear gradient for multi-color background */
+                               }
+                               
+                               
+                               .image-container2 {
+                                 display: flex;
+                                 margin-left:20px;
+
+                               }
+                               
+                               .image-container2 #img-multi {
+                                 margin-trim: 80px; /* Adjust this value to control the spacing between images */
+                               }
+                               .image22{
+                                 width:200px;
+                                 height:200px;
+                               }
+                               .head2 {
+                                 padding-top:100px;
+                               }
+                               .head2{
+                                 padding-top:110px;
+                               }
+                               
+                               .counter{
+                               
+                                 font-size:70px;
+                                 align-items: end;
+                                 position:absolute;
+                               }
+                               
+                               
+                                            
+
+/*--------------Footer Section-----------------------*/
+             
+             .container12 {
+               /* Your main content styles go here */
+               width:100%;
+               padding-top:0px;
+               margin:0px;
+               
+             }
+             
+             footer {
+               background-color: rgb(105, 46, 46);
+               width:100%;
+               height:200px;
+               margin:0px;
+               color: #fff;
+               text-align: center;
+             }
+             .contact-info-n {
+               width:30%;
+               display: inline-block;
+               margin-left:20px;
+               vertical-align: top;
+               padding-top:10px;
+             }
+             .nav-links-n {
+               width:30%;
+               display: inline-block;
+               margin-left:20px;
+               color:#ffffff;
+               vertical-align: top;
+               padding-top:10px;
+             }
+             
+             .logo-and-social{
+               width:30%;
+               display: inline-block;
+               margin-left:20px;
+               vertical-align: top;
+               padding-top:10px;
+             }
+             
+             .contact-info-n h1{
+               font-size:22px;
+             }
+             .nav-links-n ul {
+               font-size:22px;
+             }
+             
+             .contact-info-n p, .nav-links-n li a {
+               font-size: 18px;
+               margin: 5px 0;
+             }
+             .nav-links-n li a {
+               color:white;
+               text-decoration:none;
+             }
+             .nav-links-n li a:hover{
+               color:blue;
+               font-size:23px;
+               margin-left:20px;
+               text-decoration: none;
+               
+             }
+             .img-n:hover{
+               padding-top:30px;
+             }
+             
+             
+             .logo-n .img-n {
+               max-width: 100px;
+               max-height: 100px;
+             }
+             
+             .social-icons a {
+               color: #fff;
+               font-size: larger;
+               font-size: 24px;
+               margin: 0 10px;
+               padding-top:30px;
+             }
+             
+             .social-icons a:hover {
+               color: rgb(201, 131, 1);
+               font-weight: bolder;
+               width:40px;
+             
+             }
+             /*------*/
+/* styles.css */
+
+             

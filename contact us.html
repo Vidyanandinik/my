@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipra Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+     *{
+               padding:0;
+               margin:0;
+               text-decoration:none;
+               list-style:none;
+            
+               box-sizing: border-box;}
+body {
+               font-family: Verdana, sans-serif;
+}
+
+img {
+               vertical-align: middle;
+}
+.background-fix{
+               width:100%;
+               height:auto;
+}
+body{
+               font-family:sans-serif;
+}
+nav{
+               background:#ffff;
+               height:80px;
+               width:100%;
+}
+label{
+               color:white;
+               font-size:35px;
+               line-height:80px;
+               padding:0 100px;
+               font-weight:bold;
+
+}
+
+nav ul{
+               float:right;
+               margin-right:20px;
+}
+nav ul li{
+               display: inline-block;
+               line-height:80px;
+               margin:0 5px;
+}
+nav ul li a{
+               color:gray;
+               font-size:17px;
+               padding:7px 13px;
+               border-radius: 3px;
+               text-decoration: none;
+               
+}
+a.active,a:hover{
+               color: green;
+               transition:.5s;
+               font-weight: bold;
+
+}
+.checkbtn{
+               font-size:30px;
+               color:white;
+               float:right;
+               line-height:80px;
+               margin-right:40px;
+               cursor:pointer;
+               display: none;
+
+}
+
+#check{
+               display:none;
+}
+@media (max-width: 952px){
+               label.logo{
+               font-size:30px;
+               padding-left:50px
+               }
+               nav ul li a{
+                              font-size:16px;
+               }
+}
+@media (max-width: 858px)
+{
+               .checkbtn{
+                              display: block;
+               }
+               ul{
+                              position:fixed;
+                              width:100%;
+                              height:100vh;
+                              background:#2c3e50;
+                              top:80px;
+                              left:-100%;
+                              text-align:center;
+               }
+               nav ul li{
+                              display:block;
+                              margin:50px 0;
+                              line-height:30px;
+               }
+               nav ul li a{
+                              font-size:20px;
+               }
+               a:hover,a.active{
+                              background:none;
+                              color:#0082e6
+               }
+               #check:checked ~ ul{
+                              left:0;
+
+               }
+            }
+         .complete-image{
+            background-image: url("images/palm\ oil.jpg");
+            background-size: cover;
+            height:300px;
+         
+         }
+         .page{
+	padding-top:150px;
+	}
+  .media-icons a{
+
+padding:8px;
+background-color:brown;
+border-radius:52%;
+
+}
+
+.page1{
+ text-decoration: none;
+ font-size:30px;
+ font-family:sans-serif;
+ line-height:1.7em;
+}
+.page1:hover{
+  text-decoration:none;
+
+}
+.page2{
+  padding-top:50px;
+}
+.overlay {
+  background: var(--header);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 900;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms var(--slide);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.overlay-message {
+  font-size: 30px;
+  font-weight: 600;
+  opacity: 0;
+  color: var(--text);
+  transition: opacity 250ms;
+  text-align: center;
+}
+.overflow {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow-y: scroll; 
+}
+
+.overflow::-webkit-scrollbar {
+    display: none; 
+
+}
+.form-control {
+    background-color: #f2f6f8;
+		border-radius:none;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+   margin-left: 30px;
+		
+    &.thick {
+      height: 3.3rem;
+      padding: .5rem 3.5rem;
+    }
+		
+		&:focus {
+			background-color: #f2f6f8;
+			border: none;
+			box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		}
+}
+
+  ::placeholder {
+    font-family: 'Quicksand', sans-serif;
+		font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+  }
+  
+ #name{
+    width:250px;
+ }
+ .btn.btn-primary{
+   font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-image:linear-gradient(131deg, #F7AF0A ,#B4820F , #FAB61B  , #C19F51 );
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+     color:white;
+          }
+
+    .btn.btn-primary:hover:enabled {
+     box-shadow: 0 0.5em 0.5em -0.4em #0B7302  ;
+     background-size: 100% 100%;
+     transform: translateY(-0.15em);
+         }
+         .page3{
+          margin: 60px;
+         }
+      /*--------map location----*/
+      .map-container{
+        width:100%;
+        padding-top:400px;
+        height:auto;
+      }
+      /*-------------Footer Section-----------------*/
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container12 {
+  /* Your main content styles go here */
+  padding: 20px;
+  
+}
+
+footer {
+  background-color: rgb(105, 46, 46);
+  width:100%;
+  height:250px;
+  color: #fff;
+  text-align: center;
+  padding-top:0px;
+}
+.contact-info-n {
+  width:30%;
+  display: inline-block;
+  margin-left:20px;
+  vertical-align: top;
+}
+.nav-links-n {
+  width:30%;
+  display: inline-block;
+  margin-left:20px;
+  color:#ffffff;
+  vertical-align: top;
+}
+
+.logo-and-social{
+  width:30%;
+  display: inline-block;
+  margin-left:20px;
+  padding-top:30px;
+  vertical-align: top;
+}
+
+.contact-info-n h1{
+  font-size:22px;
+  margin-bottom: 10px;
+}
+.nav-links-n ul {
+  font-size:22px;
+  margin-bottom: 10px;
+}
+
+.contact-info-n p, .nav-links-n li a {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.nav-links-n li a {
+  color:white;
+  text-decoration:none;
+}
+.nav-links-n li a:hover{
+  color:blue;
+  font-size:23px;
+  margin-left:20px;
+  text-decoration: none;
+  
+}
+.img-n:hover{
+  padding-top:3opx;
+}
+
+
+.logo-n .img-n {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: larger;
+  font-size: 24px;
+  margin: 0 10px;
+  padding-top:30px;
+}
+
+.social-icons a:hover {
+  color: rgb(201, 131, 1);
+  font-weight: bolder;
+  width:40px;
+
+}
+
+
+
+</style>
+</head>
+<body>
+  
+    <nav>
+      
+       <label class="logo"><img src="images/logo.png"></label>
+       <ul>
+         <li><a href="info.html">Home</a></li>
+         <li><a href="about us.html">About Us</a></li>
+         <li><a href="sandalwoodfarm.html">SANDALWOOD FARM</a></li>
+         <li><a href="dragon fruit.html">Dragon Fruit</a></li>
+         <li><a href="palm.html">Palm Oil Farm</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="contact us.html">Contact Us</a></li>
+         </ul>
+      </nav>
+      <div class="complete-image">
+        <div class="page">	  
+          <h1 style="text-align: center;color:white;font-family: sans-serif;font-size:35px;font-weight:bolder;">Contact Us</h1>
+      </div>
+      </div>
+      <div class="page3">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              <h1 style="color:#7E2708">Contact Us</h1>
+              <img src="images/c1.jpeg" width="80px"><a href="#" style="color: #010101" class="page1">info@grofarms.co.in</a><br>
+              <img src="images/c2.jpeg" width="80px"><a href="#" style="color: #010101" class="page1">+91 9133111001</a><br>
+              <img src="images/c3.webp" width="80pdx"><a href="#" style="color: #010101" class="page1">#403, Aparna Green Homes, Nanakramguda,<br> Hyderabad - 500032.</a><br>
+              <div class="media-icons page2">
+                <a href="#"><i class="fab fa-instagram" style="font-size:25px;color:white"></i></a>
+                <a href="#"><i class="fab fa-twitter" style="font-size:25px;color:white"></i></a>  
+                  <a href="#"><i class="fab fa-youtube" style="font-size:25px;color:white"></i></a>  
+                  <a href="#"><i class="fab fa-facebook" style="font-size:25px;color:white"></i></a> 
+              <a href="#"><i class="fab fa-linkedin" style="font-size:25px;color:white"></i></a> 
+            </div>
+            </div>
+            <div class="col-md-6">
+              <h1 style="text-align: center;color:brown;font-family: sans-serif;font-size:35px;font-weight:bolder;">Enquiry</h1>
+              <div class="overflow">
+                <div  class="name">
+                 
+                          <form method="post" action="ServletExample"  onsubmit="return validate()" class="form-group ">
+                            <div style="display:flex;">
+                            <input type="text"  class="form-control" name="Firstname" id="firatname"  required class="form-control" placeholder="First Name" onblur="return fun()">
+                                <p id="error"></p>
+                                <input type="text"  class="form-control" name="lastname" id="lastname"  required class="form-control" placeholder="Last Name" onblur="return fun()">
+                              </div>
+                              <br>
+                           <div style="display:flex;">
+                            <input type="number"   class="form-control" name="Contact Number" id="contact number" placeholder="Contact Number"  class="form-control"  onblur="return fun1()" style="flex:1;">
+                              <p id="error1"></p>  
+                           
+                            <input type="email"  class="form-control " name="email" id="email"  required class="form-control" placeholder="E-mail Address" onblur="return fun3()" style="flex:1;">
+                              <p id="error2"></p>
+                              </div>
+                              <br>
+                              <div style="display:flex;">
+                                <input type="project Intrestted in"  class="form-control " name="project Intrestted in" id="project Intrestted in"  required class="form-control" placeholder="Project Intrestted in" onblur="return fun3()" style="flex:1;">
+                                <input type="Select Budget"  class="form-control " name="Select Budget" id="Select Budget"  required class="form-control" placeholder="Select Budget" onblur="return fun3()" style="flex:1;">
+                              </div>
+                              <br>
+                              <input type="number" id="phone" name="phone" required class="form-control" placeholder="Where did you hear about us? "   onblur="return fun()">
+
+                              <br>
+                              <textarea id="message" name="message" required class="form-control" placeholder="Message"  onblur="return fun3()"></textarea>
+                              <br><br>
+                              <button type="submit" class="btn btn-primary">Contact Us</button>
+                            
+                            </form>
+                          </div>
+               </div>
+             </div>
+            </div>
+        </div>
+  </div>
+  <!--------------Google Map Location-->
+  <div class="map-container">
+    <div class="my-map">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15167.01642972437!2d79.19840874677342!3d18.129142968840437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bccc803574e9f17%3A0x8892664824a00def!2sHusnabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1699080085443!5m2!1sen!2sin" width="1500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+  </div>
+  <!---------Footer section-------->
+  <!---------------Footer Section ------>
+  <div class="container">
+    <!-- Your website content goes here -->
+</div>
+<footer>
+    <div class="contact-info-n">
+        <center><h1>Contact Information</h1></center>
+        <p><i class="fa fa-envelope"></i> Email: example@email.com</p>
+        <p><i class="fa fa-phone"></i> Phone: (123) 456-7890</p>
+        <p><i class="fa fa-map-marker-alt"></i> Address: 123 Street, City, Country</p>
+    </div>
+    <div class="logo-and-social">
+        <div class="logo-n">
+            <img src="E:\farm\images\grofarmslogo.png" alt="Website Logo" class="img-n">
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="nav-links-n">
+        <ul style="list-style-type:none;color:#ffffff">
+            <li><a href="#">Home</a><span><a href="#">&nbsp;&nbsp;&nbsp;About Us</span></a></li>
+            <li><a href="#">SANDALWOOD Farm</a><span><a href="#">&nbsp;&nbsp;&nbsp;<span>Dragon Fruit</span></a></li>
+            <li><a href="#">Palm Oil Farm</a><span><a href="#">&nbsp;&nbsp;&nbsp;<span> Contact Us</span></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+  <script>
+		function fun(){
+	var name=document.getElementById("name").value;
+
+	if(name==""){
+	document.getElementById("error").innerHTML="*Enter First Name";
+	document.getElementById("error").style.color="red";
+	return false;
+}
+	
+}
+function fun1(){
+	var email=document.getElementById("email").value;
+
+	if(email==""){
+	document.getElementById("error1").innerHTML="*Enter Email";
+	document.getElementById("error1").style.color="red";
+	return false;
+}
+	
+}
+function fun2(){
+	var phone=document.getElementById("phone").value;
+
+	if(phone==""){
+	document.getElementById("error2").innerHTML="*Enter Phone";
+	document.getElementById("error2").style.color="red";
+	return false;
+}
+	
+}
+function fun3(){
+	var message=document.getElementById("message").value;
+
+	if(message==""){
+	document.getElementById("error3").innerHTML="*Enter Message";
+	document.getElementById("error3").style.color="red";
+	return false;
+}
+	
+}
+</script>
+      </body>
+      </html>
